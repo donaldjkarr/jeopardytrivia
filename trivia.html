@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trivia</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- container 1-->
+	<div class="container">
+		<!-- jumbotron -->
+  		<div class="jumbotron">
+  			<h1 id="title">Trivia</h1>
+  			<p></p>
+  			<button type="button" class="btn btn-danger btn-lg" id="button">Get Started!</button>
+		</div>
+	</div>
+	<!-- container 1-->
+
+	<!-- 	container 2 -->
+	<div class="container">
+		<div class="row">
+		  <div class="col-lg-8" id="gamecontent">
+		  	<h1 id="question"></h1>
+		  		<h2 class="x" id="answer1">...</h2>
+		  		<h2 class="x" id="answer2">...</h2>
+		  		<h2 class="x" id="answer3">...</h2>
+		  		<h2 class="x" id="answer4">...</h2>
+		  </div>
+
+		  	<!-- Appends user score to screen -->
+		  	<div class="col-sm-2" id="scorecard">
+		  		<h2>Correct</h2>
+		  			<div id="scoresheet">
+		  				<h1 id="counter">...</h1>
+		  			</div>
+		  	</div>
+
+		  	<!-- will show incorrect when heroku gets it together -->
+
+<!-- 		<div class="col-sm-2" id="incorrectcard">
+		  		<h2>Incorrrect</h2>
+		  			<div id="incorrectsheet">
+		  				<h1 id="incorrect">...</h1>
+		  			</div>
+		  	</div> -->
+
+		  	<!-- correct answer displayed on screen -->
+		  	<div class="col-md-4" id="correctcard">
+		  		<h2>Correct Answer</h2>
+		  			<div id="correctsheet">
+		  				<h3 id="showcorrect"></h3>
+		  			</div>
+		  	</div>
+		</div>
+	</div>
+	<!-- 	container 2-->
+
+	<footer class="footer">
+		<div id="footerpara">
+			<p>copyright Donald Karr 2017</p>
+		</div>
+	</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="game.js"></script>
+
+</body>
+</html>
